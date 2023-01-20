@@ -1,0 +1,88 @@
+.container {
+  padding: 0 2rem;
+}
+
+.layout {
+  min-height: 100vh;
+}
+
+.layout Header, .card {
+  box-shadow: rgba(0, 0, 0, 0.20) 0px 3px 5px;
+}
+
+.pale {
+  opacity: 0.5;
+}
+
+.fullCircle {
+  border-radius: 50%;
+  width: 1.5em;
+  height: 1.5em;
+  font-size: 0.75em;
+  padding-bottom: 1.5em;
+  color: white;
+  background-color: #1890FF;
+}
+
+.pale, .fullCircle {
+  margin-left: 2px;
+}
+ 
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: stretch;
+  max-width: 1400px;
+  width: 100%;
+  margin: auto;
+}
+
+.card {
+  min-width: 300px;
+}
+
+.pageTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.pageTitle h1 {
+  font-size: 2em;
+}
+
+.actionButtons {
+  display: flex;
+  align-items: center;
+}
+
+.actionButtons Button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.charts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header {
+  margin: 0 5rem;
+}
+
+@media (max-width: 1400px) {
+  .pageTitle:first-child {
+    padding: 0 20px;
+  }
+
+  .charts {
+    justify-content: center;
+  }
+}
